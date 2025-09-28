@@ -3,10 +3,10 @@ import requests
 import pandas as pd
 from datetime import datetime, timedelta
 
-# === Läs credentials från Streamlit Secrets ===
-CLIENT_ID = st.secrets["96835"]
-CLIENT_SECRET = st.secrets["48422d736255f83271f5711c119157cad79d0095"]
-REFRESH_TOKEN = st.secrets["bcc2af1fa72795834c88bbb0aee24fb680450483"]
+CLIENT_ID = st.secrets["CLIENT_ID"]
+CLIENT_SECRET = st.secrets["CLIENT_SECRET"]
+REFRESH_TOKEN = st.secrets["REFRESH_TOKEN"]
+
 
 STRAVA_TOKEN_URL = "https://www.strava.com/oauth/token"
 STRAVA_BASE = "https://www.strava.com/api/v3"
